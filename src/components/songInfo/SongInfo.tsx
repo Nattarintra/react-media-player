@@ -1,12 +1,17 @@
 import type { ReactElement } from "react"
 import { Button } from "../utils/buttons/Button"
-import { Title } from "../utils/titles/Title"
+import { Title, type ITitleProps } from "../utils/titles/Title"
 
-export const SongInfo = (): ReactElement => {
+interface ISongInfoProps {
+  props: ITitleProps
+}
+
+export const SongInfo = ({ props }: ISongInfoProps): ReactElement => {
+  const { artist, song } = props
   return (
     <>
       <Button icon="add_circle" />
-      <Title artist="A Rocket to the moon" name="Like we used to" />
+      <Title artist={artist} song={song} />
       <Button icon="favorite" />
     </>
   )

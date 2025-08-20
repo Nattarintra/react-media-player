@@ -1,15 +1,15 @@
 import type { ReactElement } from "react"
 import "./title.css"
 
-interface ITitleProps {
+export interface ITitleProps {
+  song: string
   artist: string
-  name: string
 }
-export const Title = ({ artist, name }: ITitleProps): ReactElement => {
+export const Title = ({ song, artist }: ITitleProps): ReactElement => {
   return (
     <section className="artist-band">
+      <p>{song}</p>
       <p>{artist}</p>
-      <p>{name}</p>
     </section>
   )
 }

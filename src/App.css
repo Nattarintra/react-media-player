@@ -17,3 +17,14 @@ body {
 h1 {
   font-weight: 200;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+/* .link {
+  cursor: pointer; 
+  transition: background-color 0.2s ease;
+}
+.link:hover {
+  background-color: #0056b3;
+} */
