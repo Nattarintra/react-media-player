@@ -1,0 +1,30 @@
+section.playlist-card,
+.playlist-card > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section.playlist-card {
+  margin: 1rem 0;
+}
+.playlist-card > article {
+  gap: 1rem;
+  align-items: center;
+}
+.playlist-card img {
+  max-width: 5rem;
+}
+
+/* === Tablet === */
+@media (min-width: 768px) {
+  .playlist-card > article > p {
+    font-size: 30px;
+  }
+}
+/* === Desktop === */
+@media (min-width: 1024px) {
+  .material-symbols-outlined {
+    font-size: 40px;
+  }
+}

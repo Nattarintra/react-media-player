@@ -1,6 +1,16 @@
 div span {
   color: white;
 }
-.material-symbols-outlined {
-  font-size: 40px;
+
+/* === Tablet === */
+@media (min-width: 768px) {
+  .material-symbols-outlined {
+    font-size: 30px;
+  }
+}
+/* === Desktop === */
+@media (min-width: 1024px) {
+  .material-symbols-outlined {
+    font-size: 40px;
+  }
 }

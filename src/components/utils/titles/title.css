@@ -1,0 +1,9 @@
+.artist-band p:last-child {
+  color: rgb(186, 183, 183);
+}
+/* === Tablet === */
+@media (min-width: 768px) {
+  .artist-band p {
+    font-size: 1.1rem;
+  }
+}

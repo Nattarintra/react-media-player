@@ -1,4 +1,5 @@
 import type { ReactElement } from "react"
+import "./title.css"
 
 interface ITitleProps {
   artist: string
@@ -6,7 +7,7 @@ interface ITitleProps {
 }
 export const Title = ({ artist, name }: ITitleProps): ReactElement => {
   return (
-    <section>
+    <section className="artist-band">
       <p>{artist}</p>
       <p>{name}</p>
     </section>

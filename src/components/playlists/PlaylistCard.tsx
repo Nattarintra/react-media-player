@@ -2,31 +2,22 @@ import type { ReactElement } from "react"
 import { Thumpnail } from "../utils/thumpnials/Thumpnail"
 import { Button } from "../utils/buttons/Button"
 import { Title } from "../utils/titles/Title"
-import rockMoonImg from "./../../assets/song-image.png"
+import { myPlaylist } from "../../data/myPlaylist"
+
+import "./playlistCard.css"
 
 export const PlaylistCard = (): ReactElement => {
   return (
     <>
-      <section>
-        <Thumpnail image={rockMoonImg} imageAlt="Rock moon songs" />
-        <Title artist="A Rocket to the moon" name="Like we used to" />
-        <Button icon="play_circle" />
-      </section>
-      <section>
-        <Thumpnail image={rockMoonImg} imageAlt="Rock moon songs" />
-        <Title artist="A Rocket to the moon" name="Like we used to" />
-        <Button icon="play_circle" />
-      </section>
-      <section>
-        <Thumpnail image={rockMoonImg} imageAlt="Rock moon songs" />
-        <Title artist="A Rocket to the moon" name="Like we used to" />
-        <Button icon="play_circle" />
-      </section>
-      <section>
-        <Thumpnail image={rockMoonImg} imageAlt="Rock moon songs" />
-        <Title artist="A Rocket to the moon" name="Like we used to" />
-        <Button icon="play_circle" />
-      </section>
+      {myPlaylist.map(item => (
+        <section className="playlist-card">
+          <article key={item.song} className="song-card">
+            <Thumpnail image={item.image} imageAlt={item.alt} />
+            <Title artist={item.song} name={item.artist} />
+          </article>
+          <Button icon="play_circle" />
+        </section>
+      ))}
     </>
   )
 }

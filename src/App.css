@@ -11,6 +11,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: white;
+  width: 80vw;
+  margin: 0 auto;
 }
 h1 {
   font-weight: 200;
