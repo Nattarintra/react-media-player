@@ -5,9 +5,5 @@ interface IButtonProps {
   icon: ReactNode
 }
 export const Button = ({ icon }: IButtonProps): ReactElement => {
-  return (
-    <div>
-      <span className="material-symbols-outlined">{icon}</span>
-    </div>
-  )
+  return <span className="material-symbols-outlined">{icon}</span>
 }

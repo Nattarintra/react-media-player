@@ -1,0 +1,29 @@
+.btn-play-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.btn-play-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-play-center :nth-child(2) {
+  font-size: 40px;
+}
+
+/* === Tablet === */
+@media (min-width: 768px) {
+  .btn-play-center :nth-child(2) {
+    font-size: 50px;
+  }
+}
+/* === Desktop === */
+@media (min-width: 1024px) {
+  .btn-play-center :nth-child(2) {
+    font-size: 60px;
+  }
+}

@@ -9,8 +9,8 @@ const App = (): ReactElement => {
   return (
     <>
       <Header />
-      <PlaylistCard />
       <PlayingMusic />
+      <PlaylistCard />
     </>
   )
 }

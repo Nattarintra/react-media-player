@@ -1,0 +1,8 @@
+.song-info-card {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+}
