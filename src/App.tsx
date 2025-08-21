@@ -2,15 +2,17 @@ import type { ReactElement } from "react"
 import "./App.css"
 
 import { Header } from "./components/headers/Header"
-import { PlaylistCard } from "./components/playlists/PlaylistCard"
-import { PlayingMusic } from "./components/display-music/PlayingMusic"
+
+import { Desktop } from "./components/desktop/Desktop"
+import { MobileFirst } from "./components/mobile.tsx/MobileFirst"
+import { useMediaQuery } from "./hooks/useMediaQuery"
 
 const App = (): ReactElement => {
+  const isDesktop = useMediaQuery("(min-width: 768px)")
   return (
     <>
       <Header />
-      <PlayingMusic />
-      <PlaylistCard />
+      {isDesktop ? <Desktop /> : <MobileFirst />}
     </>
   )
 }

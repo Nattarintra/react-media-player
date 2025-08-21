@@ -10,17 +10,17 @@ import { Link } from "../link/Link"
 export const PlaylistCard = (): ReactElement => {
   return (
     <>
-      {myPlaylist.map(item => (
-        <Link href="#" key={item.song}>
-          <section className="playlist-card">
+      <section className="playlist-card">
+        {myPlaylist.map(item => (
+          <Link href="#" key={item.song}>
             <article className="song-card">
               <Thumpnail image={item.image} imageAlt={item.alt} />
               <Title song={item.song} artist={item.artist} />
             </article>
             <Button icon="play_circle" />
-          </section>
-        </Link>
-      ))}
+          </Link>
+        ))}
+      </section>
     </>
   )
 }

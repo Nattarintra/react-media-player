@@ -1,17 +1,21 @@
-section.playlist-card,
-.playlist-card > article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
 section.playlist-card {
   margin: 1rem 0;
+  flex-direction: row;
 }
-.playlist-card > article {
-  gap: 1rem;
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
   align-items: center;
 }
+.song-card {
+  display: flex;
+  align-items: center;
+}
+.artist-band {
+  margin: 0 1rem;
+}
+
 .playlist-card img {
   width: 5rem;
   height: 5rem;
@@ -28,7 +32,13 @@ section.playlist-card {
 }
 /* === Desktop === */
 @media (min-width: 1024px) {
+  section.playlist-card {
+    border-right: 4px solid whitesmoke;
+  }
   .material-symbols-outlined {
     font-size: 40px;
+  }
+  .flex-row {
+    margin: 1rem 3rem 1rem 0;
   }
 }

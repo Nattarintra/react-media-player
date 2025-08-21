@@ -6,7 +6,7 @@ interface ILinkProps {
 }
 export const Link = ({ href, children }: ILinkProps): ReactElement => {
   return (
-    <a href={href} className="link">
+    <a href={href} className="link flex-row">
       {children}
     </a>
   )
