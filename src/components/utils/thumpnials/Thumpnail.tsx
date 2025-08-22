@@ -1,14 +1,20 @@
 import type { ReactElement } from "react"
+import "./thumpnail.css"
 
-// import thumpnailImg from "./../../../assets/song-image.png" // import where you want to call this func
 interface IThumpnailProps {
   image: string
   imageAlt: string
+  className?: string
+  size?: "sx" | "sm" | "md" | "l" | "full-width"
 }
 
-export const Thumpnail = ({ image, imageAlt }: IThumpnailProps): ReactElement => {
+export const Thumpnail = ({ image, imageAlt, className, size }: IThumpnailProps): ReactElement => {
+  const classes = ["thumpnail"]
+  if (className) classes.push(className)
+  if (size) classes.push(size)
+
   return (
-    <figure>
+    <figure className={classes.join(" ")}>
       <img src={image} alt={imageAlt} />
     </figure>
   )

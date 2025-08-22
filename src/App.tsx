@@ -8,7 +8,7 @@ import { MobileFirst } from "./components/mobile.tsx/MobileFirst"
 import { useMediaQuery } from "./hooks/useMediaQuery"
 
 const App = (): ReactElement => {
-  const isDesktop = useMediaQuery("(min-width: 768px)")
+  const isDesktop = useMediaQuery({ query: "(min-width: 768px)" })
   return (
     <>
       <Header />

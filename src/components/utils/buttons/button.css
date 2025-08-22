@@ -8,9 +8,3 @@ div span {
     font-size: 30px;
   }
 }
-/* === Desktop === */
-@media (min-width: 1024px) {
-  .material-symbols-outlined {
-    font-size: 40px;
-  }
-}

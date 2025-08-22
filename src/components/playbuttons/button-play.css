@@ -1,9 +1,8 @@
 .btn-play-card {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 4rem 0;
+  /* margin: 2rem 0; */
 }
 .btn-play-center {
   display: flex;
@@ -12,7 +11,7 @@
   gap: 1rem;
 }
 .btn-play-center :nth-child(2) {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /* === Tablet === */

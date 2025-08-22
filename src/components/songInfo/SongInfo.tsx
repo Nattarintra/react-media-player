@@ -1,10 +1,10 @@
 import type { ReactElement } from "react"
 import { Button } from "../utils/buttons/Button"
-import { Title, type ITitleProps } from "../utils/titles/Title"
+import { SongTitle, type ISongTitleProps } from "../utils/songTitles/SongTitle"
 import "./songinfo.css"
 
 interface ISongInfoProps {
-  props: ITitleProps
+  props: ISongTitleProps
 }
 
 export const SongInfo = ({ props }: ISongInfoProps): ReactElement => {
@@ -12,7 +12,7 @@ export const SongInfo = ({ props }: ISongInfoProps): ReactElement => {
   return (
     <section className="song-info-card">
       <Button icon="add_circle" />
-      <Title artist={artist} song={song} />
+      <SongTitle textAlign="center" align="center" artist={artist} song={song} />
       <Button icon="favorite" />
     </section>
   )

@@ -1,8 +1,9 @@
-section.playlist-card {
+section.playlist-wrap {
   margin: 1rem 0;
-  flex-direction: row;
+  border: 1px solid;
+  /* continue here flex 50% disapeared */
 }
-.flex-row {
+/* .flex-row {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
@@ -11,27 +12,27 @@ section.playlist-card {
 .song-card {
   display: flex;
   align-items: center;
-}
-.artist-band {
+} */
+/* .artist-band {
   margin: 0 1rem;
-}
+} */
 
-.playlist-card img {
+/* .playlist-card img {
   width: 5rem;
   height: 5rem;
   border: 2px white solid;
   border-radius: 8px;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
-}
+} */
 
 /* === Tablet === */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .playlist-card > article > p {
     font-size: 30px;
   }
-}
+} */
 /* === Desktop === */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   section.playlist-card {
     border-right: 4px solid whitesmoke;
   }
@@ -41,4 +42,4 @@ section.playlist-card {
   .flex-row {
     margin: 1rem 3rem 1rem 0;
   }
-}
+} */

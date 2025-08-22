@@ -1,0 +1,16 @@
+.icon {
+  font-size: 24px;
+  font-variation-settings: "opsz" 48;
+}
+.icon.middle {
+  font-size: 30px;
+  font-variation-settings: "opsz" 48;
+}
+.icon.large {
+  font-size: 40px;
+  font-variation-settings: "opsz" 48;
+}
+
+.icon.fill {
+  font-variation-settings: "FILL" 1;
+}

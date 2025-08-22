@@ -1,20 +1,19 @@
 .playing-music-card {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 4rem;
+  height: 80vh;
 }
-.playing-inner-card figure {
+
+.playing-inner-card {
+  height: 50%;
+  width: 100%;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
 }
-.playing-inner-card figure img {
-  border-radius: 8px 8px 0 0;
-}
+
 /* === Desktop === */
 @media (min-width: 1024px) {
-  .playing-music-card {
-    border-bottom: none;
-  }
   .playing-inner-card {
-    width: 40vw;
+    height: 60%;
   }
 }

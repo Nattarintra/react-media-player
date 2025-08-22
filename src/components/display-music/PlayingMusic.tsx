@@ -2,8 +2,6 @@ import type { ReactElement } from "react"
 import { Thumpnail } from "../utils/thumpnials/Thumpnail"
 import { SongInfo } from "../songInfo/SongInfo"
 import { ButtonPlay } from "../playbuttons/ButtonPlay"
-import { SongImage } from "./SongImage"
-
 import timeLine from "./../../assets/timeline.png"
 
 import { myPlaylist } from "../../data/myPlaylist"
@@ -16,7 +14,7 @@ export const PlayingMusic = (): ReactElement => {
       <section className="playing-music-card">
         {myPlaylist[0] && (
           <article className="playing-inner-card">
-            <SongImage image={myPlaylist[0].image} imageAlt={myPlaylist[0].alt} />
+            <Thumpnail className="large" image={myPlaylist[0].image} imageAlt={myPlaylist[0].alt} />
             <SongInfo props={myPlaylist[0]} />
             <Thumpnail image={timeLine} imageAlt="Time line image" />
             <ButtonPlay />

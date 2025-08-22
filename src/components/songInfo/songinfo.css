@@ -1,8 +1,14 @@
 .song-info-card {
   display: flex;
   justify-content: space-between;
-  height: 5rem;
-  align-items: center;
-  text-align: center;
-  margin: 1rem 0;
+
+  /* height: 5rem;
+  margin: 1rem 0;  */
+}
+.song-info-card .song {
+  font-size: 0.8rem;
+}
+.song-info-card .artist {
+  font-size: 0.6rem;
+  color: lightgray;
 }

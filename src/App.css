@@ -7,12 +7,12 @@
 }
 
 body {
-  background-color: rgb(41, 58, 69);
+  background: linear-gradient(to bottom, #647ba5, #17173b);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: white;
-  width: 90vw;
-  /* width: 80vw; */
+  /* width: 90vw; */
+  width: 80vw;
   margin: 0 auto;
 }
 h1 {
@@ -24,4 +24,5 @@ a {
 }
 img {
   width: 100%;
+  max-width: 100%;
 }
