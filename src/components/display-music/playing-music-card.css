@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .playing-inner-card {
-  height: 50%;
-  width: 100%;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-
-/* === Desktop === */
-@media (min-width: 1024px) {
-  .playing-inner-card {
-    height: 60%;
+/* === Tablet === */
+@media (min-width: 768px) {
+  .playing-music-card {
+    margin-bottom: 0rem;
   }
 }

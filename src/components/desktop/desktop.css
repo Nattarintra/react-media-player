@@ -1,8 +1,9 @@
 .desktop {
+  margin: 0 1rem;
   display: flex;
   gap: 3rem;
 }
-.desktop .playlist-card,
+.desktop .playlist-wrap,
 .desktop .playing-music-card {
   flex: 1;
 }

@@ -1,0 +1,16 @@
+.artist-band .song {
+  font-size: 1rem;
+}
+.artist-band .artist {
+  font-size: 0.6rem;
+  color: lightgray;
+}
+/* === Desktop === */
+@media (min-width: 1024px) {
+  .artist-band .song {
+    font-size: 1.1rem;
+  }
+  .artist-band .artist {
+    font-size: 0.8rem;
+  }
+}

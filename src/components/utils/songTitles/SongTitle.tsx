@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactElement } from "react"
-import "./title.css"
+import "./songTitle.css"
 
 export interface ISongTitleProps {
   song: string
