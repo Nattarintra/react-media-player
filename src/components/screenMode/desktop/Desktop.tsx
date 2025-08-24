@@ -1,6 +1,6 @@
 import type { ReactElement } from "react"
-import { PlaylistCard } from "../playlists/PlaylistCard"
-import { PlayingMusic } from "../display-music/PlayingMusic"
+import { PlaylistCard } from "../../playlists/PlaylistCard"
+import { PlayingMusic } from "../../display-music/PlayingMusic"
 import "./desktop.css"
 
 export const Desktop = (): ReactElement => {

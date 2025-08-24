@@ -1,0 +1,22 @@
+#song-timeline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#song-timeline .time-line {
+  height: 0.4rem;
+  width: 100%;
+}
+
+#song-timeline .time-line.outer {
+  border-radius: 0.8rem;
+  background-color: black;
+  overflow: hidden;
+}
+
+#song-timeline .time-line.inner {
+  border-radius: 0.5rem;
+  background-color: white;
+  width: 18%;
+}

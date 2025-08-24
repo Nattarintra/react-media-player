@@ -1,6 +1,5 @@
 import type { CSSProperties, ReactElement } from "react"
 import { SongTitle, type ISongTitleProps } from "../utils/songTitles/SongTitle"
-import "./songinfo.css"
 import { Icon } from "../utils/icon/Icon"
 import { useMediaQuery } from "../../hooks/useMediaQuery"
 

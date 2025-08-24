@@ -3,8 +3,8 @@ import "./App.css"
 
 import { Header } from "./components/headers/Header"
 
-import { Desktop } from "./components/desktop/Desktop"
-import { MobileFirst } from "./components/mobile.tsx/MobileFirst"
+import { Desktop } from "./components/screenMode/desktop/Desktop"
+import { MobileFirst } from "./components/screenMode/mobile/MobileFirst"
 import { useMediaQuery } from "./hooks/useMediaQuery"
 
 const App = (): ReactElement => {
